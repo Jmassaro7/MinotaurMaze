@@ -66,7 +66,7 @@ void GameOver()
     // Set isGameOver to true
     isGameOver = true;
     
-    // Delay the end of the game by 5 seconds
+    // Delay the end of the game by 3 seconds
     Invoke("EndGame", 3f);
 
 
