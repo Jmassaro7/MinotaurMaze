@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class StartScreenScript : MonoBehaviour
 {
-    // Set this to your start screen in the inspector
     public GameObject startScreen;
     private Transform canvasTransform; 
     private Transform gameOverScreen; 
@@ -27,6 +26,7 @@ public class StartScreenScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //If space bar has been pressed, stop displaying the start screen
         if (Input.GetKeyDown(KeyCode.Space))
         {
             startScreen.SetActive(false);
